@@ -84,12 +84,40 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="【推荐】DevDocs，一个很好的离线API文档集合devdocs是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。
+特点：
+全英文  
+可以离线使用
+集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。
+支持文档内搜索，用起来很方便。
+
+备注
+长时间不用，可能会清空缓存，离线的时候，文档">
+<meta property="og:type" content="article">
 <meta property="og:title" content="EddieJones">
-<meta property="og:url" content="http://yoursite.com/archives/2016/08/index.html">
+<meta property="og:url" content="http://yoursite.com/devdocs是个很好的离线文档">
 <meta property="og:site_name" content="EddieJones">
+<meta property="og:description" content="【推荐】DevDocs，一个很好的离线API文档集合devdocs是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。
+特点：
+全英文  
+可以离线使用
+集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。
+支持文档内搜索，用起来很方便。
+
+备注
+长时间不用，可能会清空缓存，离线的时候，文档">
+<meta property="og:updated_time" content="2016-10-05T15:18:20.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EddieJones">
+<meta name="twitter:description" content="【推荐】DevDocs，一个很好的离线API文档集合devdocs是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。
+特点：
+全英文  
+可以离线使用
+集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。
+支持文档内搜索，用起来很方便。
+
+备注
+长时间不用，可能会清空缓存，离线的时候，文档">
 
 
 
@@ -110,10 +138,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/08/"/>
+  <link rel="canonical" href="http://yoursite.com/devdocs是个很好的离线文档"/>
 
 
-  <title> Archive | EddieJones </title>
+  <title>  | EddieJones </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="en">
@@ -134,7 +162,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -222,66 +250,125 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 5 posts in total. Keep on posting.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-10-05T21:04:52+08:00" content="2016-10-05">
+              2016-10-05
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <h2 id="【推荐】DevDocs，一个很好的离线API文档集合"><a href="#【推荐】DevDocs，一个很好的离线API文档集合" class="headerlink" title="【推荐】DevDocs，一个很好的离线API文档集合"></a>【推荐】DevDocs，一个很好的离线API文档集合</h2><p><a href="http://devdocs.io/offline" target="_blank" rel="external">devdocs</a>是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。</p>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li><font color="red">全英文</font>  </li>
+<li>可以离线使用</li>
+<li>集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。</li>
+<li>支持文档内搜索，用起来很方便。</li>
+</ul>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><ul>
+<li>长时间不用，可能会清空缓存，离线的时候，文档可能会打不开，所以我直接将<a href="http://devdocs.io/offline" target="_blank" rel="external">devdocs</a>设置成谷歌浏览器启动页。</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jQuery中 bind delegate click on都是啥？" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/如何在网上搜资源？" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-16T23:25:33+08:00"
-              content="2016-08-16" >
-          08-16
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -289,6 +376,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -308,8 +399,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -345,6 +445,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【推荐】DevDocs，一个很好的离线API文档集合"><span class="nav-number">1.</span> <span class="nav-text">【推荐】DevDocs，一个很好的离线API文档集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特点："><span class="nav-number">1.0.1.</span> <span class="nav-text">特点：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#备注"><span class="nav-number">1.0.2.</span> <span class="nav-text">备注</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -441,11 +552,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
 
 
   

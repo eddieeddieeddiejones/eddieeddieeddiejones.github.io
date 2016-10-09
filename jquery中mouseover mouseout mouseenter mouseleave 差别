@@ -84,12 +84,19 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="jQuery中mouseover mouseout mouseenter mouseleave 的差别mouseenter mouseleavemouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。
+mouseover mous">
+<meta property="og:type" content="article">
 <meta property="og:title" content="EddieJones">
-<meta property="og:url" content="http://yoursite.com/archives/2016/08/index.html">
+<meta property="og:url" content="http://yoursite.com/jquery中mouseover mouseout mouseenter mouseleave 差别">
 <meta property="og:site_name" content="EddieJones">
+<meta property="og:description" content="jQuery中mouseover mouseout mouseenter mouseleave 的差别mouseenter mouseleavemouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。
+mouseover mous">
+<meta property="og:updated_time" content="2016-10-05T13:02:40.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EddieJones">
+<meta name="twitter:description" content="jQuery中mouseover mouseout mouseenter mouseleave 的差别mouseenter mouseleavemouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。
+mouseover mous">
 
 
 
@@ -110,10 +117,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/08/"/>
+  <link rel="canonical" href="http://yoursite.com/jquery中mouseover mouseout mouseenter mouseleave 差别"/>
 
 
-  <title> Archive | EddieJones </title>
+  <title>  | EddieJones </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="en">
@@ -134,7 +141,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -222,66 +229,121 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 5 posts in total. Keep on posting.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-09-25T22:29:35+08:00" content="2016-09-25">
+              2016-09-25
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <h2 id="jQuery中mouseover-mouseout-mouseenter-mouseleave-的差别"><a href="#jQuery中mouseover-mouseout-mouseenter-mouseleave-的差别" class="headerlink" title="jQuery中mouseover mouseout mouseenter mouseleave 的差别"></a>jQuery中mouseover mouseout mouseenter mouseleave 的差别</h2><h4 id="mouseenter-mouseleave"><a href="#mouseenter-mouseleave" class="headerlink" title="mouseenter mouseleave"></a>mouseenter mouseleave</h4><p>mouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。</p>
+<h4 id="mouseover-mouseout"><a href="#mouseover-mouseout" class="headerlink" title="mouseover mouseout"></a>mouseover mouseout</h4><p>mouseover、mouseout是一对，是冒泡事件，给子元素绑定事件，当鼠标从外部移入子元素s上的时候，不仅会触发元素本身的mouseover事件，也会触发祖先元素的mouseover事件。mouseleave是鼠标移出事件，也是冒泡的。</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/async与defer的区别" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/jQuery中 bind delegate click on都是啥？" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/如何在网上搜资源？" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-16T23:25:33+08:00"
-              content="2016-08-16" >
-          08-16
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -289,6 +351,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -308,8 +374,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -345,6 +420,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery中mouseover-mouseout-mouseenter-mouseleave-的差别"><span class="nav-number">1.</span> <span class="nav-text">jQuery中mouseover mouseout mouseenter mouseleave 的差别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#mouseenter-mouseleave"><span class="nav-number">1.0.1.</span> <span class="nav-text">mouseenter mouseleave</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mouseover-mouseout"><span class="nav-number">1.0.2.</span> <span class="nav-text">mouseover mouseout</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -441,11 +527,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
 
 
   
