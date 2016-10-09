@@ -84,22 +84,27 @@
 
 
 
-<meta name="description" content="如何在网上搜资源？(转自爱搞搞)这篇文章的中间部分爱搞搞写了她使用搜索引擎的心得。文中的主要观点是：  
+<meta name="description" content="JavaScript中async与defer属性的区别从上面这张图可以发现：
 
-总结：使用搜索引擎不应该一页一页地翻搜索结果页面，搜索结果动辄几百上千的，你啥时候才能找到？正确的方法是不断切换查询的关键字，我一般不会点击第2页的结果，其实排前6、7位的文章点击进去，略略看看，找多1、2个有关的单词，然后加入搜索框重新搜，来去三两个回合，最准确的文章保证在前3位。">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/scri">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EddieJones">
-<meta property="og:url" content="http://yoursite.com/如何在网上搜资源？">
+<meta property="og:url" content="http://yoursite.com/2016/09/25/async与defer的区别/index.html">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:description" content="如何在网上搜资源？(转自爱搞搞)这篇文章的中间部分爱搞搞写了她使用搜索引擎的心得。文中的主要观点是：  
+<meta property="og:description" content="JavaScript中async与defer属性的区别从上面这张图可以发现：
 
-总结：使用搜索引擎不应该一页一页地翻搜索结果页面，搜索结果动辄几百上千的，你啥时候才能找到？正确的方法是不断切换查询的关键字，我一般不会点击第2页的结果，其实排前6、7位的文章点击进去，略略看看，找多1、2个有关的单词，然后加入搜索框重新搜，来去三两个回合，最准确的文章保证在前3位。">
-<meta property="og:updated_time" content="2016-10-05T12:29:50.077Z">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta property="og:image" content="http://yoursite.com/images/02-defer与async的区别.png">
+<meta property="og:updated_time" content="2016-10-05T12:56:27.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EddieJones">
-<meta name="twitter:description" content="如何在网上搜资源？(转自爱搞搞)这篇文章的中间部分爱搞搞写了她使用搜索引擎的心得。文中的主要观点是：  
+<meta name="twitter:description" content="JavaScript中async与defer属性的区别从上面这张图可以发现：
 
-总结：使用搜索引擎不应该一页一页地翻搜索结果页面，搜索结果动辄几百上千的，你啥时候才能找到？正确的方法是不断切换查询的关键字，我一般不会点击第2页的结果，其实排前6、7位的文章点击进去，略略看看，找多1、2个有关的单词，然后加入搜索框重新搜，来去三两个回合，最准确的文章保证在前3位。">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta name="twitter:image" content="http://yoursite.com/images/02-defer与async的区别.png">
 
 
 
@@ -120,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/如何在网上搜资源？"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/25/async与defer的区别/"/>
 
 
   <title>  | EddieJones </title>
@@ -265,8 +270,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-08-16T23:25:33+08:00" content="2016-08-16">
-              2016-08-16
+            <time itemprop="dateCreated" datetime="2016-09-25T21:22:59+08:00" content="2016-09-25">
+              2016-09-25
             </time>
           </span>
 
@@ -293,10 +298,12 @@
       
 
       
-        <h3 id="如何在网上搜资源？-转自爱搞搞"><a href="#如何在网上搜资源？-转自爱搞搞" class="headerlink" title="如何在网上搜资源？(转自爱搞搞)"></a>如何在网上搜资源？(转自爱搞搞)</h3><p><a href="http://www.aigaogao.com/blog/archives/2006_05_09_861429.html?nom=0" target="_blank" rel="external">这篇文章</a>的中间部分爱搞搞写了她使用搜索引擎的心得。文中的主要观点是：  </p>
-<blockquote>
-<p>总结：使用搜索引擎不应该一页一页地翻搜索结果页面，搜索结果动辄几百上千的，你啥时候才能找到？正确的方法是不断切换查询的关键字，我一般不会点击第2页的结果，其实排前6、7位的文章点击进去，略略看看，找多1、2个有关的单词，然后加入搜索框重新搜，来去三两个回合，最准确的文章保证在前3位。</p>
-</blockquote>
+        <h2 id="JavaScript中async与defer属性的区别"><a href="#JavaScript中async与defer属性的区别" class="headerlink" title="JavaScript中async与defer属性的区别"></a>JavaScript中async与defer属性的区别</h2><p><img src="images/02-defer与async的区别.png" alt="async与defer的区别" title="defer与async的区别"><br>从上面这张图可以发现：</p>
+<ul>
+<li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
+<li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
+<li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
+</ul>
 
       
     </div>
@@ -322,11 +329,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/16/如何在网上搜资源？/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/async与defer的区别" rel="prev" title="">
+              <a href="/2016/09/25/jquery中mouseover mouseout mouseenter mouseleave 差别/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -428,7 +439,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在网上搜资源？-转自爱搞搞"><span class="nav-number">1.</span> <span class="nav-text">如何在网上搜资源？(转自爱搞搞)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript中async与defer属性的区别"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中async与defer属性的区别</span></a></li></ol></div>
             
           </div>
         </section>
