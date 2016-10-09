@@ -84,19 +84,27 @@
 
 
 
-<meta name="description" content="jQuery中mouseover mouseout mouseenter mouseleave 的差别mouseenter mouseleavemouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。
-mouseover mous">
+<meta name="description" content="JavaScript中async与defer属性的区别从上面这张图可以发现：
+
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/scri">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EddieJones">
-<meta property="og:url" content="http://yoursite.com/jquery中mouseover mouseout mouseenter mouseleave 差别">
+<meta property="og:url" content="http://yoursite.com/2016/09/25/async与defer的区别/index.html">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:description" content="jQuery中mouseover mouseout mouseenter mouseleave 的差别mouseenter mouseleavemouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。
-mouseover mous">
-<meta property="og:updated_time" content="2016-10-05T13:02:40.843Z">
+<meta property="og:description" content="JavaScript中async与defer属性的区别从上面这张图可以发现：
+
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta property="og:image" content="http://yoursite.com/images/02-defer与async的区别.png">
+<meta property="og:updated_time" content="2016-10-05T12:56:27.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EddieJones">
-<meta name="twitter:description" content="jQuery中mouseover mouseout mouseenter mouseleave 的差别mouseenter mouseleavemouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。
-mouseover mous">
+<meta name="twitter:description" content="JavaScript中async与defer属性的区别从上面这张图可以发现：
+
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta name="twitter:image" content="http://yoursite.com/images/02-defer与async的区别.png">
 
 
 
@@ -117,7 +125,7 @@ mouseover mous">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/jquery中mouseover mouseout mouseenter mouseleave 差别"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/25/async与defer的区别/"/>
 
 
   <title>  | EddieJones </title>
@@ -262,7 +270,7 @@ mouseover mous">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-09-25T22:29:35+08:00" content="2016-09-25">
+            <time itemprop="dateCreated" datetime="2016-09-25T21:22:59+08:00" content="2016-09-25">
               2016-09-25
             </time>
           </span>
@@ -290,8 +298,12 @@ mouseover mous">
       
 
       
-        <h2 id="jQuery中mouseover-mouseout-mouseenter-mouseleave-的差别"><a href="#jQuery中mouseover-mouseout-mouseenter-mouseleave-的差别" class="headerlink" title="jQuery中mouseover mouseout mouseenter mouseleave 的差别"></a>jQuery中mouseover mouseout mouseenter mouseleave 的差别</h2><h4 id="mouseenter-mouseleave"><a href="#mouseenter-mouseleave" class="headerlink" title="mouseenter mouseleave"></a>mouseenter mouseleave</h4><p>mouseenter、mouseleave是一对，是不冒泡事件，给子元素绑定mouseenter事件，当鼠标从外部移入子元素上的时候不会触发祖先元素的mouseenter事件。mouseleave是鼠标移出事件，也是不冒泡的。</p>
-<h4 id="mouseover-mouseout"><a href="#mouseover-mouseout" class="headerlink" title="mouseover mouseout"></a>mouseover mouseout</h4><p>mouseover、mouseout是一对，是冒泡事件，给子元素绑定事件，当鼠标从外部移入子元素s上的时候，不仅会触发元素本身的mouseover事件，也会触发祖先元素的mouseover事件。mouseleave是鼠标移出事件，也是冒泡的。</p>
+        <h2 id="JavaScript中async与defer属性的区别"><a href="#JavaScript中async与defer属性的区别" class="headerlink" title="JavaScript中async与defer属性的区别"></a>JavaScript中async与defer属性的区别</h2><p><img src="images/02-defer与async的区别.png" alt="async与defer的区别" title="defer与async的区别"><br>从上面这张图可以发现：</p>
+<ul>
+<li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
+<li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
+<li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
+</ul>
 
       
     </div>
@@ -317,7 +329,7 @@ mouseover mous">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/async与defer的区别" rel="next" title="">
+              <a href="/2016/08/16/如何在网上搜资源？/" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -325,7 +337,7 @@ mouseover mous">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/jQuery中 bind delegate click on都是啥？" rel="prev" title="">
+              <a href="/2016/09/25/jquery中mouseover mouseout mouseenter mouseleave 差别/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -441,7 +453,7 @@ mouseover mous">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery中mouseover-mouseout-mouseenter-mouseleave-的差别"><span class="nav-number">1.</span> <span class="nav-text">jQuery中mouseover mouseout mouseenter mouseleave 的差别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#mouseenter-mouseleave"><span class="nav-number">1.0.1.</span> <span class="nav-text">mouseenter mouseleave</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mouseover-mouseout"><span class="nav-number">1.0.2.</span> <span class="nav-text">mouseover mouseout</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript中async与defer属性的区别"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中async与defer属性的区别</span></a></li></ol></div>
             
           </div>
         </section>

@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="async与defer的区别," />
 
 
 
@@ -84,25 +84,25 @@
 
 
 
-<meta name="description" content="jQuery中 bind delegate click on都是啥？.bind( eventType [, eventData ], handler )123$( &quot;#foo&quot; ).bind( &quot;click&quot;, function() &amp;#123;  alert( &quot;User clicked on &apos;foo.&apos;&quot; );&amp;#125;);
+<meta name="description" content="async与defer的区别从上面这张图可以发现：
 
-给匹配到的元素绑定事件
-对于动态添加的元素，不会绑定事件。">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;脚本加载和ht">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EddieJones">
-<meta property="og:url" content="http://yoursite.com/jQuery中 bind delegate click on都是啥？">
+<meta property="og:title" content="JavaScript中async与defer属性的区别">
+<meta property="og:url" content="http://yoursite.com/2016/10/09/JavaScript中async与defer属性的区别/index.html">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:description" content="jQuery中 bind delegate click on都是啥？.bind( eventType [, eventData ], handler )123$( &quot;#foo&quot; ).bind( &quot;click&quot;, function() &amp;#123;  alert( &quot;User clicked on &apos;foo.&apos;&quot; );&amp;#125;);
+<meta property="og:description" content="async与defer的区别从上面这张图可以发现：
 
-给匹配到的元素绑定事件
-对于动态添加的元素，不会绑定事件。">
-<meta property="og:updated_time" content="2016-10-05T12:53:27.811Z">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;脚本加载和ht">
+<meta property="og:updated_time" content="2016-10-09T14:49:41.901Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EddieJones">
-<meta name="twitter:description" content="jQuery中 bind delegate click on都是啥？.bind( eventType [, eventData ], handler )123$( &quot;#foo&quot; ).bind( &quot;click&quot;, function() &amp;#123;  alert( &quot;User clicked on &apos;foo.&apos;&quot; );&amp;#125;);
+<meta name="twitter:title" content="JavaScript中async与defer属性的区别">
+<meta name="twitter:description" content="async与defer的区别从上面这张图可以发现：
 
-给匹配到的元素绑定事件
-对于动态添加的元素，不会绑定事件。">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
+&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;脚本加载和ht">
 
 
 
@@ -123,10 +123,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/jQuery中 bind delegate click on都是啥？"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/09/JavaScript中async与defer属性的区别/"/>
 
 
-  <title>  | EddieJones </title>
+  <title> JavaScript中async与defer属性的区别 | EddieJones </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="en">
@@ -256,7 +256,7 @@
             
             
               
-                
+                JavaScript中async与defer属性的区别
               
             
           </h1>
@@ -268,11 +268,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-09-27T22:21:16+08:00" content="2016-09-27">
-              2016-09-27
+            <time itemprop="dateCreated" datetime="2016-10-09T22:40:22+08:00" content="2016-10-09">
+              2016-10-09
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -296,26 +315,12 @@
       
 
       
-        <h2 id="jQuery中-bind-delegate-click-on都是啥？"><a href="#jQuery中-bind-delegate-click-on都是啥？" class="headerlink" title="jQuery中 bind delegate click on都是啥？"></a>jQuery中 bind delegate click on都是啥？</h2><h4 id="bind-eventType-eventData-handler"><a href="#bind-eventType-eventData-handler" class="headerlink" title=".bind( eventType [, eventData ], handler )"></a>.bind( eventType [, eventData ], handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"#foo"</span> ).bind( <span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  alert( <span class="string">"User clicked on 'foo.'"</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+        <p><a href="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" target="_blank" rel="external">async与defer的区别</a><br>从上面这张图可以发现：</p>
 <ul>
-<li>给匹配到的元素绑定事件</li>
-<li>对于动态添加的元素，不会绑定事件。   </li>
+<li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
+<li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
+<li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
 </ul>
-<h4 id="delegate-selector-eventType-eventData-handler"><a href="#delegate-selector-eventType-eventData-handler" class="headerlink" title=".delegate( selector, eventType, eventData, handler )"></a>.delegate( selector, eventType, eventData, handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"table"</span> ).delegate( <span class="string">"td"</span>, <span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $( <span class="keyword">this</span> ).toggleClass( <span class="string">"chosen"</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>对于动态添加的元素，会绑定事件。</li>
-</ul>
-<h4 id="click-handler"><a href="#click-handler" class="headerlink" title=".click( handler )"></a>.click( handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"#target"</span> ).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  alert( <span class="string">"Handler for .click() called."</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>给元素绑定单击事件</li>
-<li>对于动态添加的元素，不会绑定事件。  </li>
-</ul>
-<h4 id="on-events-selector-data-handler"><a href="#on-events-selector-data-handler" class="headerlink" title=".on( events [, selector ] [, data ], handler )"></a>.on( events [, selector ] [, data ], handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"#dataTable tbody"</span> ).on( <span class="string">"click"</span>, <span class="string">"tr"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log( $( <span class="keyword">this</span> ).text() );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>对于动态添加的元素，会绑定事件</li>
-<li>jQuery源码中.bind()、.delegate()方法都是通过.on()方法实现的。</li>
-</ul>
-<font color="red">如果用的jQuery版本是1.7+的话，建议使用.on()方法绑定事件。</font>
 
       
     </div>
@@ -336,22 +341,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/async与defer的区别/" rel="tag">#async与defer的区别</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/jquery中mouseover mouseout mouseenter mouseleave 差别" rel="next" title="">
+              <a href="/2016/10/05/devdocs是个很好的离线文档/" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/devdocs是个很好的离线文档" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -465,7 +472,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery中-bind-delegate-click-on都是啥？"><span class="nav-number">1.</span> <span class="nav-text">jQuery中 bind delegate click on都是啥？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bind-eventType-eventData-handler"><span class="nav-number">1.0.1.</span> <span class="nav-text">.bind( eventType [, eventData ], handler )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#delegate-selector-eventType-eventData-handler"><span class="nav-number">1.0.2.</span> <span class="nav-text">.delegate( selector, eventType, eventData, handler )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#click-handler"><span class="nav-number">1.0.3.</span> <span class="nav-text">.click( handler )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#on-events-selector-data-handler"><span class="nav-number">1.0.4.</span> <span class="nav-text">.on( events [, selector ] [, data ], handler )</span></a></li></ol></li></ol></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
         </section>
