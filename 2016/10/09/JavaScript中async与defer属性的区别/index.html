@@ -86,24 +86,21 @@
 
 <meta name="description" content="从上面这张图可以发现：
 
-&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
-&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;脚本加载和html文档解析是并行进行的，但">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript中async与defer属性的区别">
 <meta property="og:url" content="http://yoursite.com/2016/10/09/JavaScript中async与defer属性的区别/index.html">
 <meta property="og:site_name" content="EddieJones">
 <meta property="og:description" content="从上面这张图可以发现：
 
-&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
-&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;脚本加载和html文档解析是并行进行的，但">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。">
 <meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
-<meta property="og:updated_time" content="2016-10-09T14:53:57.094Z">
+<meta property="og:updated_time" content="2016-10-09T15:14:08.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中async与defer属性的区别">
 <meta name="twitter:description" content="从上面这张图可以发现：
 
-&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。
-&amp;lt;script defer src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;脚本加载和html文档解析是并行进行的，但">
+&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。">
 <meta name="twitter:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
 
 
@@ -320,6 +317,9 @@
         <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别"><br>从上面这张图可以发现：</p>
 <ul>
 <li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
+</ul>
+<a id="more"></a>
+<ul>
 <li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
 <li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
 </ul>

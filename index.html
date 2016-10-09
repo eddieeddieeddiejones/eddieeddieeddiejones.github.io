@@ -308,15 +308,15 @@
 
       
         
-          
-            <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别"><br>从上面这张图可以发现：</p>
+          <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别"><br>从上面这张图可以发现：</p>
 <ul>
 <li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
-<li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
-<li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
 </ul>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/09/JavaScript中async与defer属性的区别/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
