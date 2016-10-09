@@ -84,25 +84,40 @@
 
 
 
-<meta name="description" content="jQuery中 bind delegate click on都是啥？.bind( eventType [, eventData ], handler )123$( &quot;#foo&quot; ).bind( &quot;click&quot;, function() &amp;#123;  alert( &quot;User clicked on &apos;foo.&apos;&quot; );&amp;#125;);
+<meta name="description" content="【推荐】DevDocs，一个很好的离线API文档集合devdocs是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。
+特点：
+全英文  
+可以离线使用
+集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。
+支持文档内搜索，用起来很方便。
 
-给匹配到的元素绑定事件
-对于动态添加的元素，不会绑定事件。">
+备注
+长时间不用，可能会清空缓存，离线的时候，文档">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EddieJones">
-<meta property="og:url" content="http://yoursite.com/2016/09/27/jQuery中 bind delegate click on都是啥？/index.html">
+<meta property="og:url" content="http://yoursite.com/devdocs是个很好的离线文档">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:description" content="jQuery中 bind delegate click on都是啥？.bind( eventType [, eventData ], handler )123$( &quot;#foo&quot; ).bind( &quot;click&quot;, function() &amp;#123;  alert( &quot;User clicked on &apos;foo.&apos;&quot; );&amp;#125;);
+<meta property="og:description" content="【推荐】DevDocs，一个很好的离线API文档集合devdocs是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。
+特点：
+全英文  
+可以离线使用
+集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。
+支持文档内搜索，用起来很方便。
 
-给匹配到的元素绑定事件
-对于动态添加的元素，不会绑定事件。">
-<meta property="og:updated_time" content="2016-10-05T12:53:27.811Z">
+备注
+长时间不用，可能会清空缓存，离线的时候，文档">
+<meta property="og:updated_time" content="2016-10-05T15:18:20.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EddieJones">
-<meta name="twitter:description" content="jQuery中 bind delegate click on都是啥？.bind( eventType [, eventData ], handler )123$( &quot;#foo&quot; ).bind( &quot;click&quot;, function() &amp;#123;  alert( &quot;User clicked on &apos;foo.&apos;&quot; );&amp;#125;);
+<meta name="twitter:description" content="【推荐】DevDocs，一个很好的离线API文档集合devdocs是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。
+特点：
+全英文  
+可以离线使用
+集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。
+支持文档内搜索，用起来很方便。
 
-给匹配到的元素绑定事件
-对于动态添加的元素，不会绑定事件。">
+备注
+长时间不用，可能会清空缓存，离线的时候，文档">
 
 
 
@@ -123,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/27/jQuery中 bind delegate click on都是啥？/"/>
+  <link rel="canonical" href="http://yoursite.com/devdocs是个很好的离线文档"/>
 
 
   <title>  | EddieJones </title>
@@ -268,8 +283,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-09-27T22:21:16+08:00" content="2016-09-27">
-              2016-09-27
+            <time itemprop="dateCreated" datetime="2016-10-05T21:04:52+08:00" content="2016-10-05">
+              2016-10-05
             </time>
           </span>
 
@@ -296,26 +311,16 @@
       
 
       
-        <h2 id="jQuery中-bind-delegate-click-on都是啥？"><a href="#jQuery中-bind-delegate-click-on都是啥？" class="headerlink" title="jQuery中 bind delegate click on都是啥？"></a>jQuery中 bind delegate click on都是啥？</h2><h4 id="bind-eventType-eventData-handler"><a href="#bind-eventType-eventData-handler" class="headerlink" title=".bind( eventType [, eventData ], handler )"></a>.bind( eventType [, eventData ], handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"#foo"</span> ).bind( <span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  alert( <span class="string">"User clicked on 'foo.'"</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>给匹配到的元素绑定事件</li>
-<li>对于动态添加的元素，不会绑定事件。   </li>
+        <h2 id="【推荐】DevDocs，一个很好的离线API文档集合"><a href="#【推荐】DevDocs，一个很好的离线API文档集合" class="headerlink" title="【推荐】DevDocs，一个很好的离线API文档集合"></a>【推荐】DevDocs，一个很好的离线API文档集合</h2><p><a href="http://devdocs.io/offline" target="_blank" rel="external">devdocs</a>是一个前端方面的API文档工具。我用了2天，发现解决了我的痛点，就急着推荐给大家，可能有缺点我还没发现。</p>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li><font color="red">全英文</font>  </li>
+<li>可以离线使用</li>
+<li>集中多个文档于一处，JS、VUE、jQuery、BootStrap、Angular，前端方面的，想要的都有。</li>
+<li>支持文档内搜索，用起来很方便。</li>
 </ul>
-<h4 id="delegate-selector-eventType-eventData-handler"><a href="#delegate-selector-eventType-eventData-handler" class="headerlink" title=".delegate( selector, eventType, eventData, handler )"></a>.delegate( selector, eventType, eventData, handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"table"</span> ).delegate( <span class="string">"td"</span>, <span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $( <span class="keyword">this</span> ).toggleClass( <span class="string">"chosen"</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>对于动态添加的元素，会绑定事件。</li>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><ul>
+<li>长时间不用，可能会清空缓存，离线的时候，文档可能会打不开，所以我直接将<a href="http://devdocs.io/offline" target="_blank" rel="external">devdocs</a>设置成谷歌浏览器启动页。</li>
 </ul>
-<h4 id="click-handler"><a href="#click-handler" class="headerlink" title=".click( handler )"></a>.click( handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"#target"</span> ).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  alert( <span class="string">"Handler for .click() called."</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>给元素绑定单击事件</li>
-<li>对于动态添加的元素，不会绑定事件。  </li>
-</ul>
-<h4 id="on-events-selector-data-handler"><a href="#on-events-selector-data-handler" class="headerlink" title=".on( events [, selector ] [, data ], handler )"></a>.on( events [, selector ] [, data ], handler )</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$( <span class="string">"#dataTable tbody"</span> ).on( <span class="string">"click"</span>, <span class="string">"tr"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log( $( <span class="keyword">this</span> ).text() );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<ul>
-<li>对于动态添加的元素，会绑定事件</li>
-<li>jQuery源码中.bind()、.delegate()方法都是通过.on()方法实现的。</li>
-</ul>
-<font color="red">如果用的jQuery版本是1.7+的话，建议使用.on()方法绑定事件。</font>
 
       
     </div>
@@ -341,17 +346,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/25/jquery中mouseover mouseout mouseenter mouseleave 差别/" rel="next" title="">
+              <a href="/jQuery中 bind delegate click on都是啥？" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/05/devdocs是个很好的离线文档/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +452,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery中-bind-delegate-click-on都是啥？"><span class="nav-number">1.</span> <span class="nav-text">jQuery中 bind delegate click on都是啥？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bind-eventType-eventData-handler"><span class="nav-number">1.0.1.</span> <span class="nav-text">.bind( eventType [, eventData ], handler )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#delegate-selector-eventType-eventData-handler"><span class="nav-number">1.0.2.</span> <span class="nav-text">.delegate( selector, eventType, eventData, handler )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#click-handler"><span class="nav-number">1.0.3.</span> <span class="nav-text">.click( handler )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#on-events-selector-data-handler"><span class="nav-number">1.0.4.</span> <span class="nav-text">.on( events [, selector ] [, data ], handler )</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【推荐】DevDocs，一个很好的离线API文档集合"><span class="nav-number">1.</span> <span class="nav-text">【推荐】DevDocs，一个很好的离线API文档集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特点："><span class="nav-number">1.0.1.</span> <span class="nav-text">特点：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#备注"><span class="nav-number">1.0.2.</span> <span class="nav-text">备注</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
