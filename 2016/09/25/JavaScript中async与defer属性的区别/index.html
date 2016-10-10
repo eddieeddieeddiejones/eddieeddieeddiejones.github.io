@@ -84,23 +84,14 @@
 
 
 
-<meta name="description" content="从上面这张图可以发现：
-
-&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript中async与defer属性的区别">
-<meta property="og:url" content="http://yoursite.com/2016/10/09/JavaScript中async与defer属性的区别/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/09/25/JavaScript中async与defer属性的区别/index.html">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:description" content="从上面这张图可以发现：
-
-&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。">
 <meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
-<meta property="og:updated_time" content="2016-10-09T15:14:08.948Z">
+<meta property="og:updated_time" content="2016-10-09T23:50:39.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中async与defer属性的区别">
-<meta name="twitter:description" content="从上面这张图可以发现：
-
-&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;浏览器在读到 script标签后，就开始加载、执行script标签中的代码，此时html解析暂停。">
 <meta name="twitter:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
 
 
@@ -122,7 +113,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/09/JavaScript中async与defer属性的区别/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/25/JavaScript中async与defer属性的区别/"/>
 
 
   <title> JavaScript中async与defer属性的区别 | EddieJones </title>
@@ -267,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-10-09T22:40:22+08:00" content="2016-10-09">
-              2016-10-09
+            <time itemprop="dateCreated" datetime="2016-09-25T21:30:22+08:00" content="2016-09-25">
+              2016-09-25
             </time>
           </span>
 
@@ -314,12 +305,11 @@
       
 
       
-        <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别"><br>从上面这张图可以发现：</p>
+        <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别">  </p>
+<a id="more"></a>
+<p>从上面这张图可以发现：</p>
 <ul>
 <li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
-</ul>
-<a id="more"></a>
-<ul>
 <li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
 <li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
 </ul>
@@ -354,13 +344,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/05/devdocs是个很好的离线文档/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2016/09/25/jquery中mouseover mouseout mouseenter mouseleave 差别/" rel="next" title="jQuery中mouseover mouseout mouseenter mouseleave 的差别">
+                <i class="fa fa-chevron-left"></i> jQuery中mouseover mouseout mouseenter mouseleave 的差别
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/27/jQuery中 bind delegate click on都是啥？/" rel="prev" title="jQuery中 bind delegate click on都是啥？">
+                jQuery中 bind delegate click on都是啥？ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -428,7 +422,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -436,7 +430,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -445,7 +439,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
