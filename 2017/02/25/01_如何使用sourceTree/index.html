@@ -1,0 +1,711 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="sourceTree," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="为什么要用sourceTree？某一模块的功能我做出来，下一个功能我不一定能顺利做出来，在做这个有挑战的功能前，我想存个档，这样万一做不出来，在soureceTree上点击“丢弃”就能恢复到之前存档的状态，要比自己去删代码要轻松很多。用sourceTree,代码写到一个阶段，就提交下，soureTree是图形界面，我能看到我对代码都做了什么。心里踏实，什么框架、库、API啦也敢去试。写代码尝试是避">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用sourceTree？">
+<meta property="og:url" content="http://yoursite.com/2017/02/25/01_如何使用sourceTree/index.html">
+<meta property="og:site_name" content="EddieJones">
+<meta property="og:description" content="为什么要用sourceTree？某一模块的功能我做出来，下一个功能我不一定能顺利做出来，在做这个有挑战的功能前，我想存个档，这样万一做不出来，在soureceTree上点击“丢弃”就能恢复到之前存档的状态，要比自己去删代码要轻松很多。用sourceTree,代码写到一个阶段，就提交下，soureTree是图形界面，我能看到我对代码都做了什么。心里踏实，什么框架、库、API啦也敢去试。写代码尝试是避">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/05_%E5%85%8B%E9%9A%86.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/06_%E6%A3%80%E5%87%BA.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/01_%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF_01.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/01_%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF_02.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/01_%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF_03.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/09_%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E5%90%8E_%E6%8B%89%E5%8F%96.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/08_%E5%90%88%E5%B9%B6.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/02_%E4%BF%AE%E6%94%B9%E3%80%81%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81_01.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/02_%E4%BF%AE%E6%94%B9%E3%80%81%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81_02.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/02_%E4%BF%AE%E6%94%B9%E3%80%81%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81_03.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/09_%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E5%90%8E_%E6%8E%A8%E9%80%81.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/09_%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E5%90%8E_%E6%8E%A8%E9%80%81.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/03_%E4%B8%A2%E5%BC%83%E4%BB%A3%E7%A0%81_01.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/03_%E4%B8%A2%E5%BC%83%E4%BB%A3%E7%A0%81_02.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/10_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_%E9%87%8D%E7%BD%AE%E4%BB%A3%E7%A0%81%E5%88%B0%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_01.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_02.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_03.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_04.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_05.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/11_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81_01.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/11_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81_02.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/14_SSHclone.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/13_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_SSH_01.png">
+<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/13_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_SSH_02.png">
+<meta property="og:updated_time" content="2017-02-25T16:02:00.103Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何使用sourceTree？">
+<meta name="twitter:description" content="为什么要用sourceTree？某一模块的功能我做出来，下一个功能我不一定能顺利做出来，在做这个有挑战的功能前，我想存个档，这样万一做不出来，在soureceTree上点击“丢弃”就能恢复到之前存档的状态，要比自己去删代码要轻松很多。用sourceTree,代码写到一个阶段，就提交下，soureTree是图形界面，我能看到我对代码都做了什么。心里踏实，什么框架、库、API啦也敢去试。写代码尝试是避">
+<meta name="twitter:image" content="http://oeqjwiq0w.bkt.clouddn.com/05_%E5%85%8B%E9%9A%86.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/02/25/01_如何使用sourceTree/"/>
+
+
+  <title> 如何使用sourceTree？ | EddieJones </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">EddieJones</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何使用sourceTree？
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-02-25T23:27:22+08:00" content="2017-02-25">
+              2017-02-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端开发/" itemprop="url" rel="index">
+                    <span itemprop="name">前端开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="为什么要用sourceTree？"><a href="#为什么要用sourceTree？" class="headerlink" title="为什么要用sourceTree？"></a>为什么要用sourceTree？</h2><p>某一模块的功能我做出来，下一个功能我不一定能顺利做出来，在做这个有挑战的功能前，我想存个档，这样万一做不出来，在soureceTree上点击“丢弃”就能恢复到之前存档的状态，要比自己去删代码要轻松很多。用sourceTree,代码写到一个阶段，就提交下，soureTree是图形界面，我能看到我对代码都做了什么。心里踏实，什么框架、库、API啦也敢去试。写代码尝试是避免不了的。</p>
+<a id="more"></a>
+<h2 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h2><h3 id="修改代码前"><a href="#修改代码前" class="headerlink" title="修改代码前"></a>修改代码前</h3><h4 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h4><p><img src="http://oeqjwiq0w.bkt.clouddn.com/05_%E5%85%8B%E9%9A%86.png" alt="克隆" title="克隆"></p>
+<h4 id="检出"><a href="#检出" class="headerlink" title="检出"></a>检出</h4><ul>
+<li>检出是什么意思？<br>  代码克隆到本地电脑上，可能克隆的是<code>master</code>分支。但是，有可能master分支上没有代码，代码都被提交到dev分支上了。<br>  所以，<font color="red">我要把dev分支上的代码克隆到我的电脑上，并且本地代码切到dev分支上。</font>我理解的检出就是这个意思</li>
+<li>检出步骤<ol>
+<li>右击某一远程分支</li>
+<li>检出远程分支<br><img src="http://oeqjwiq0w.bkt.clouddn.com/06_%E6%A3%80%E5%87%BA.png" alt="检出" title="检出"></li>
+</ol>
+</li>
+</ul>
+<h4 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h4><ol>
+<li>双击dev分支，代码切到dev分支上（新建的分支的代码是拷贝这个分支的）</li>
+<li>鼠标在“分支”二字上右击=&gt; 新建分支</li>
+<li>输入我的分支名=&gt;新建分支<br><img src="http://oeqjwiq0w.bkt.clouddn.com/01_%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF_01.png" alt="新建分支" title="新建分支"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/01_%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF_02.png" alt="新建分支" title="新建分支"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/01_%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF_03.png" alt="新建分支" title="新建分支"></li>
+</ol>
+<h4 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h4><p>大家团队开发同一个项目，别人提交了新的代码到远程仓库。这时候我本地的代码不是最新的，要拉取远程最新代码。<br><img src="http://oeqjwiq0w.bkt.clouddn.com/09_%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E5%90%8E_%E6%8B%89%E5%8F%96.png" alt="修改代码后_拉取" title="修改代码后_拉取"></p>
+<h4 id="合并别的分支的代码到我的分支上"><a href="#合并别的分支的代码到我的分支上" class="headerlink" title="合并别的分支的代码到我的分支上"></a>合并别的分支的代码到我的分支上</h4><p><font color="red">就是将两个分支的代码合并，修改的是我的分支的代码。</font><br><img src="http://oeqjwiq0w.bkt.clouddn.com/08_%E5%90%88%E5%B9%B6.png" alt="合并" title="合并"></p>
+<h3 id="在我的分支上修改代码"><a href="#在我的分支上修改代码" class="headerlink" title="在我的分支上修改代码"></a>在我的分支上修改代码</h3><h4 id="修改、提交代码"><a href="#修改、提交代码" class="headerlink" title="修改、提交代码"></a>修改、提交代码</h4><ol>
+<li>代码切到Q_dev分支上（我新创建的自己的分支）</li>
+<li>打开编辑器，修改代码，<font color="red">保存</font></li>
+<li>打开sourceTree，<font color="red">点击工作副本</font>，发现代码已经改变了，勾选要提交的代码</li>
+<li><p>点击提交=&gt;写提交信息，描述对代码做了什么改动=&gt;提交<br><img src="http://oeqjwiq0w.bkt.clouddn.com/02_%E4%BF%AE%E6%94%B9%E3%80%81%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81_01.png" alt="新建分支" title="修改、提交代码"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/02_%E4%BF%AE%E6%94%B9%E3%80%81%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81_02.png" alt="新建分支" title="修改、提交代码"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/02_%E4%BF%AE%E6%94%B9%E3%80%81%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81_03.png" alt="新建分支" title="修改、提交代码"></p>
+<h4 id="修改代码后"><a href="#修改代码后" class="headerlink" title="修改代码后"></a>修改代码后</h4><p>在我的分支上修改代码，完成了某一个功能，我想把代码推送到远程分支，要进行下面这一系列操作<br>假设dev是公共分支，Q_dev是我自己的开发分支</p>
+</li>
+<li><p>提交Q_dev分支代码<br> 不提交切不了分支，操作步骤见『修改、提交代码』部分</p>
+</li>
+<li>切换到dev再次拉取代码<br> 可能在你开发的过程中，远程仓库的代码被别人修改了<br> <img src="http://oeqjwiq0w.bkt.clouddn.com/09_%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E5%90%8E_%E6%8E%A8%E9%80%81.png" alt="修改代码后_拉取" title="修改代码后_拉取"></li>
+<li>双击切换到Q_dev分支，将dev分支上的代码合并到Q_dev<br> 为什么？因为合并代码可能会冲突，冲突了要修改本地的代码，将本地的代码合并，合并会出错，出错了反正是在你的分支上，你自己想办法。要是在dev分支上合并，出错了就有可能影响别的同事提交代码了。<br> 操作步骤见『合并』部分</li>
+<li>再次切到dev分支，将Q_dev分支上的代码合并到dev<br> 这时候的代码已经在Q_dev分支上合并好了，所以再次合并到dev的时候就不会冲突了。</li>
+<li>将本地dev分支的代码『推送』到远程<br> <img src="http://oeqjwiq0w.bkt.clouddn.com/09_%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E5%90%8E_%E6%8E%A8%E9%80%81.png" alt="修改代码后_推送" title="修改代码后_推送">  </li>
+</ol>
+<h3 id="碎碎叨叨"><a href="#碎碎叨叨" class="headerlink" title="碎碎叨叨"></a>碎碎叨叨</h3><h4 id="『git分支』是什么？"><a href="#『git分支』是什么？" class="headerlink" title="『git分支』是什么？"></a>『git分支』是什么？</h4><p>一个git仓库可以新建很多个分支，git仓库有个“.git”的隐藏文件夹，记录各个分支的状态。<font color="red">虽然整个仓库只有一个文件夹，但是切换到不同分支，文件夹内的代码是不同的。</font></p>
+<h4 id="某一个功能代码写好了，要写下一个功能，但是心里没底？"><a href="#某一个功能代码写好了，要写下一个功能，但是心里没底？" class="headerlink" title="某一个功能代码写好了，要写下一个功能，但是心里没底？"></a>某一个功能代码写好了，要写下一个功能，但是心里没底？</h4><ol>
+<li>修改代码前，确认代码已经被提交（表示已经存档）</li>
+<li>修改代码后，打开sourceTree,点击工作副本，查看文件状态</li>
+<li>点击“丢弃”</li>
+<li>选中要丢弃的文件，丢弃更改，没有提交的文件会被全部丢弃掉<br><img src="http://oeqjwiq0w.bkt.clouddn.com/03_%E4%B8%A2%E5%BC%83%E4%BB%A3%E7%A0%81_01.png" alt="新建分支" title="丢弃"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/03_%E4%B8%A2%E5%BC%83%E4%BB%A3%E7%A0%81_02.png" alt="新建分支" title="丢弃"><h4 id="某个功能代码写的不成功，想还原到上一个commit重新开始？"><a href="#某个功能代码写的不成功，想还原到上一个commit重新开始？" class="headerlink" title="某个功能代码写的不成功，想还原到上一个commit重新开始？"></a>某个功能代码写的不成功，想还原到上一个commit重新开始？</h4></li>
+</ol>
+<ul>
+<li>如果新写的代码还没有提交，直接用sourceTree『丢弃』新写的代码</li>
+<li>也可以使用回滚功能，看<a href="http://www.jianshu.com/p/3faabf43991c" target="_blank" rel="external">Git客户端SourceTree回滚到远程仓库和切换分支</a>这篇教程</li>
+<li>如果新写的代码已经提交了，那么可以使用『重置代码到当前分支』功能 <ul>
+<li>『重置代码到当前分支』的意思是<font color="red">取消某一提交节点之前的所有提交</font>，这时候我可以点击『丢弃』，代码就恢复到某一提交节点了。这个功能有危险，慎用。</li>
+</ul>
+<ol>
+<li>切换到『当前分支』，避免干扰</li>
+<li>在某一条提交信息上右击，『重置代码到当前分支』<br><img src="http://oeqjwiq0w.bkt.clouddn.com/10_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_%E9%87%8D%E7%BD%AE%E4%BB%A3%E7%A0%81%E5%88%B0%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF.png" alt="新建分支" title="重置代码到当前分支"><h4 id="就某一功能写了些代码，但是没有完成，不愿意提交代码。但是不提交代码又不能切分支，怎么办？"><a href="#就某一功能写了些代码，但是没有完成，不愿意提交代码。但是不提交代码又不能切分支，怎么办？" class="headerlink" title="就某一功能写了些代码，但是没有完成，不愿意提交代码。但是不提交代码又不能切分支，怎么办？"></a>就某一功能写了些代码，但是没有完成，不愿意提交代码。但是不提交代码又不能切分支，怎么办？</h4></li>
+</ol>
+</li>
+<li>我们有可能遇到这个情况：想研究下公司的代码，自己添些注释。所以要新建个自己的分支，在新建的分支上写一些注释。有时候又想切到公司的分支上查看代码。这时候，要么提交代码，要么将代码暂存，否则切不了分支。</li>
+<li>暂存是什么意思？<br>  暂存的意思就是将代码新修改的部分临时保存起来，这时候如果打开文件，会发现文件恢复到修改之前的状态了。<br>  如果想把文件修改到恢复到修改后的状态，可以『应用缓存区』</li>
+<li>如何使用暂存功能？<ul>
+<li>暂存<ol>
+<li>修改文件后，打开sourceTree，点击工作副本，勾选文件，将文件保存到暂存区</li>
+<li>点击暂存，写暂存文件名，确定</li>
+<li>在暂存目录下，会看到刚暂存的文件（这时候就可以切换分支了）<br><img src="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_01.png" alt="暂存" title="暂存"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_02.png" alt="暂存" title="暂存"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_03.png" alt="暂存" title="暂存"></li>
+</ol>
+</li>
+<li>应用暂存区<ol>
+<li>在暂存的文件名上右击，『应用暂存区』</li>
+<li>勾选“应用后删除”，点击ok，应用暂存<br><img src="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_04.png" alt="暂存" title="暂存"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/04_%E6%9A%82%E5%AD%98_05.png" alt="暂存" title="应用暂存"><h4 id="我想研究下公司的代码，自己写一些注释或者console-log-该怎么做？"><a href="#我想研究下公司的代码，自己写一些注释或者console-log-该怎么做？" class="headerlink" title="我想研究下公司的代码，自己写一些注释或者console.log,该怎么做？"></a>我想研究下公司的代码，自己写一些注释或者<code>console.log</code>,该怎么做？</h4>新建个分支，在新建的分支上修改代码，暂存，此时我写的一些注释被存起来，git『工作副本』的状态是<code>nothing to commit</code>，可以切到公共分支查看代码。再切回到自己的分支，『应用暂存区』就又能看到自己的注释了。<h4 id="代码合并冲突了，怎么做？"><a href="#代码合并冲突了，怎么做？" class="headerlink" title="代码合并冲突了，怎么做？"></a>代码合并冲突了，怎么做？</h4></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>打开编辑器将冲突解决</li>
+<li>再次点击提交<br><img src="http://oeqjwiq0w.bkt.clouddn.com/11_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81_01.png" alt="解决冲突01" title="解决冲突01"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/11_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81_02.png" alt="解决冲突02" title="解决冲突02"><h4 id="切换分支前要注意什么？"><a href="#切换分支前要注意什么？" class="headerlink" title="切换分支前要注意什么？"></a>切换分支前要注意什么？</h4>工作副本是『nothing to commit』状态才可以切换分支，如果不是这个状态，可以『暂存』或者『提交』后切换分支</li>
+</ol>
+<h4 id="工作中sourceTree使用步骤"><a href="#工作中sourceTree使用步骤" class="headerlink" title="工作中sourceTree使用步骤"></a>工作中sourceTree使用步骤</h4><p>假设同事的代码都提交到dev分支上，假设我自己的开发分支是Q_dev</p>
+<ol>
+<li>从远程拉取代码，保证代码最新。把最新的代码合并到自己的分支(Q_dev)上</li>
+<li>在自己的分支上修改代码(Q_dev)</li>
+<li>提交，推送(Q_dev)</li>
+<li>切到dev分支，拉取代码(代码提交前先从远程拉取代码，防止代码冲突)</li>
+<li>切到我的开发分支(Q_dev),合并dev到Q_dev，推送Q_dev上新合并的代码到远程Q_dev分支上</li>
+<li>切到dev上，再合并Q_dev到当前分支（dev），提交代码，推送<h4 id="提交代码前要做的3件事情"><a href="#提交代码前要做的3件事情" class="headerlink" title="提交代码前要做的3件事情"></a>提交代码前要做的3件事情</h4></li>
+</ol>
+<ul>
+<li>git diff ，检查所有的变更</li>
+<li>跑一遍单元测试</li>
+<li>手动运行一遍所有demo</li>
+</ul>
+<p>####　sourceTree 无法用SSH克隆克隆远程仓库？<br>比如用sourceTree 克隆链接是<br><code>git@github.com:eddieeddieeddiejones/jQuery.git</code><br>这种方式是用SSH克隆<br><img src="http://oeqjwiq0w.bkt.clouddn.com/14_SSHclone.png" alt="SSH克隆" title="SSH克隆"></p>
+<ul>
+<li>大致原理<br>  我要在电脑上生成一个唯一识别码（就是一个密码），然后把这个密码添加到远程仓库，相当于远程仓库识别了这台电脑，再把这个唯一识别码添加到sourceTree，就可以用sourceTree克隆、修改、提交代码啦。</li>
+<li>解决步骤<ol>
+<li>设置SSH密钥：<br><a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">https://help.github.com/articles/connecting-to-github-with-ssh/</a></li>
+<li>将本地生成的ssh密钥添加到sourceTree<br><img src="http://oeqjwiq0w.bkt.clouddn.com/13_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_SSH_01.png" alt="SSH01" title="SSH01"><br><img src="http://oeqjwiq0w.bkt.clouddn.com/13_%E7%A2%8E%E7%A2%8E%E5%8F%A8%E5%8F%A8_SSH_02.png" alt="SSH02" title="SSH02"></li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/sourceTree/" rel="tag">#sourceTree</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/11/如何学前端？/" rel="next" title="如何学前端？">
+                <i class="fa fa-chevron-left"></i> 如何学前端？
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="EddieJones" />
+          <p class="site-author-name" itemprop="name">EddieJones</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用sourceTree？"><span class="nav-number">1.</span> <span class="nav-text">为什么要用sourceTree？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用？"><span class="nav-number">2.</span> <span class="nav-text">如何使用？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改代码前"><span class="nav-number">2.1.</span> <span class="nav-text">修改代码前</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆"><span class="nav-number">2.1.1.</span> <span class="nav-text">克隆</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#检出"><span class="nav-number">2.1.2.</span> <span class="nav-text">检出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建分支"><span class="nav-number">2.1.3.</span> <span class="nav-text">新建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拉取"><span class="nav-number">2.1.4.</span> <span class="nav-text">拉取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合并别的分支的代码到我的分支上"><span class="nav-number">2.1.5.</span> <span class="nav-text">合并别的分支的代码到我的分支上</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在我的分支上修改代码"><span class="nav-number">2.2.</span> <span class="nav-text">在我的分支上修改代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改、提交代码"><span class="nav-number">2.2.1.</span> <span class="nav-text">修改、提交代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改代码后"><span class="nav-number">2.2.2.</span> <span class="nav-text">修改代码后</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#碎碎叨叨"><span class="nav-number">2.3.</span> <span class="nav-text">碎碎叨叨</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#『git分支』是什么？"><span class="nav-number">2.3.1.</span> <span class="nav-text">『git分支』是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#某一个功能代码写好了，要写下一个功能，但是心里没底？"><span class="nav-number">2.3.2.</span> <span class="nav-text">某一个功能代码写好了，要写下一个功能，但是心里没底？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#某个功能代码写的不成功，想还原到上一个commit重新开始？"><span class="nav-number">2.3.3.</span> <span class="nav-text">某个功能代码写的不成功，想还原到上一个commit重新开始？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#就某一功能写了些代码，但是没有完成，不愿意提交代码。但是不提交代码又不能切分支，怎么办？"><span class="nav-number">2.3.4.</span> <span class="nav-text">就某一功能写了些代码，但是没有完成，不愿意提交代码。但是不提交代码又不能切分支，怎么办？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#我想研究下公司的代码，自己写一些注释或者console-log-该怎么做？"><span class="nav-number">2.3.5.</span> <span class="nav-text">我想研究下公司的代码，自己写一些注释或者console.log,该怎么做？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码合并冲突了，怎么做？"><span class="nav-number">2.3.6.</span> <span class="nav-text">代码合并冲突了，怎么做？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#切换分支前要注意什么？"><span class="nav-number">2.3.7.</span> <span class="nav-text">切换分支前要注意什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工作中sourceTree使用步骤"><span class="nav-number">2.3.8.</span> <span class="nav-text">工作中sourceTree使用步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提交代码前要做的3件事情"><span class="nav-number">2.3.9.</span> <span class="nav-text">提交代码前要做的3件事情</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">EddieJones</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
