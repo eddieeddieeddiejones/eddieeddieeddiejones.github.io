@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="async与defer的区别," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,15 +84,12 @@
 
 
 
-<meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中async与defer属性的区别">
-<meta property="og:url" content="http://yoursite.com/2016/09/25/JavaScript中async与defer属性的区别/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EddieJones">
+<meta property="og:url" content="http://yoursite.com/categories/速读笔记/index.html">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
-<meta property="og:updated_time" content="2016-12-11T13:23:45.313Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript中async与defer属性的区别">
-<meta name="twitter:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
+<meta name="twitter:title" content="EddieJones">
 
 
 
@@ -113,10 +110,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/25/JavaScript中async与defer属性的区别/"/>
+  <link rel="canonical" href="http://yoursite.com/categories/速读笔记/"/>
 
 
-  <title> JavaScript中async与defer属性的区别 | EddieJones </title>
+  <title> Category: 速读笔记 | EddieJones </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="en">
@@ -137,7 +134,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -225,152 +222,75 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                JavaScript中async与defer属性的区别
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-09-25T21:30:22+08:00" content="2016-09-25">
-              2016-09-25
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别">  </p>
-<a id="more"></a>
-<p>从上面这张图可以发现：</p>
-<ul>
-<li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
-<li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
-<li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
-</ul>
-
-      
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        速读笔记
+        <small>Category</small>
+      </h2>
     </div>
 
-    <div>
+    
       
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-
-      
-    </div>
-
-    <div>
-      
+            <a class="post-title-link" href="/2017/02/25/02_速读笔记_如何高效学习/" itemprop="url">
+              
+                <span itemprop="name">速读笔记-01-如何高效学习</span>
+              
+            </a>
         
+      </h1>
 
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-02-25T23:27:22+08:00"
+              content="2017-02-25" >
+          02-25
+        </time>
+      </div>
 
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/async与defer的区别/" rel="tag">#async与defer的区别</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/09/25/jquery中mouseover mouseout mouseenter mouseleave 差别/" rel="next" title="jQuery中mouseover mouseout mouseenter mouseleave 的差别">
-                <i class="fa fa-chevron-left"></i> jQuery中mouseover mouseout mouseenter mouseleave 的差别
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/27/jQuery中 bind delegate click on都是啥？/" rel="prev" title="jQuery中 bind delegate click on都是啥？">
-                jQuery中 bind delegate click on都是啥？ <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
+    
       
-    </div>
-  </div>
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2017/02/25/03_速读笔记_原则/" itemprop="url">
+              
+                <span itemprop="name">速读笔记-02-原则</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-02-25T23:27:22+08:00"
+              content="2017-02-25" >
+          02-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+    
+  </section>
+
+  
+
 
 
           </div>
@@ -378,10 +298,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -401,17 +317,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -461,17 +368,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -568,10 +464,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
-
-
 
   
 

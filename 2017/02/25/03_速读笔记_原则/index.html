@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="async与defer的区别," />
+  <meta name="keywords" content="方法论," />
 
 
 
@@ -84,15 +84,28 @@
 
 
 
+<meta name="description" content="书名：《原则》by Ray Dalio雷.达里奥 著选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。
+开放，创造事情合理，别人都能理解的氛围
+正直且要求别人正直
+不容忍失信，一次都不可以
+用行动去道歉">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中async与defer属性的区别">
-<meta property="og:url" content="http://yoursite.com/2016/09/25/JavaScript中async与defer属性的区别/index.html">
+<meta property="og:title" content="速读笔记-02-原则">
+<meta property="og:url" content="http://yoursite.com/2017/02/25/03_速读笔记_原则/index.html">
 <meta property="og:site_name" content="EddieJones">
-<meta property="og:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
-<meta property="og:updated_time" content="2016-12-11T13:23:45.313Z">
+<meta property="og:description" content="书名：《原则》by Ray Dalio雷.达里奥 著选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。
+开放，创造事情合理，别人都能理解的氛围
+正直且要求别人正直
+不容忍失信，一次都不可以
+用行动去道歉">
+<meta property="og:updated_time" content="2017-05-21T02:02:17.087Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript中async与defer属性的区别">
-<meta name="twitter:image" content="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png">
+<meta name="twitter:title" content="速读笔记-02-原则">
+<meta name="twitter:description" content="书名：《原则》by Ray Dalio雷.达里奥 著选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。
+开放，创造事情合理，别人都能理解的氛围
+正直且要求别人正直
+不容忍失信，一次都不可以
+用行动去道歉">
 
 
 
@@ -113,10 +126,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/25/JavaScript中async与defer属性的区别/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/25/03_速读笔记_原则/"/>
 
 
-  <title> JavaScript中async与defer属性的区别 | EddieJones </title>
+  <title> 速读笔记-02-原则 | EddieJones </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="en">
@@ -246,7 +259,7 @@
             
             
               
-                JavaScript中async与defer属性的区别
+                速读笔记-02-原则
               
             
           </h1>
@@ -258,8 +271,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-09-25T21:30:22+08:00" content="2016-09-25">
-              2016-09-25
+            <time itemprop="dateCreated" datetime="2017-02-25T23:27:22+08:00" content="2017-02-25">
+              2017-02-25
             </time>
           </span>
 
@@ -272,8 +285,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/速读笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">速读笔记</span>
                   </a>
                 </span>
 
@@ -305,13 +318,30 @@
       
 
       
-        <p><img src="http://oeqjwiq0w.bkt.clouddn.com/E:%5Cgithub%5Chexo%5Csource%5C_posts%5Cimages02-defer%E4%B8%8Easync%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="async与defer的区别" title="async与defer的区别">  </p>
-<a id="more"></a>
-<p>从上面这张图可以发现：</p>
-<ul>
-<li><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>浏览器在读到 <code>script</code>标签后，就开始加载、执行script标签中的代码，此时html解析暂停。</li>
-<li><code>&lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;</code><br>脚本加载和html文档解析是并行进行的，但是<code>script</code>脚本的执行是在html解析完成后，<code>DOMContentLoaded</code>事件触发之前开始的。<br>在浏览器加载并解析完html文档（样式表、图片、子窗口可能还没有加载完成），会触发<code>DOMContentLoaded</code>事件。</li>
-<li><code>&lt;script async src=&quot;myscript.js&quot;&gt;&lt;/script&gt;</code><br><code>script</code>脚本和html解析同步执行，并且<code>script</code>脚本在加载完成后立即执行，在脚本执行的这段时间内浏览器不会解析html文档。</li>
+        <h3 id="书名：《原则》"><a href="#书名：《原则》" class="headerlink" title="书名：《原则》"></a>书名：《原则》</h3><h3 id="by-Ray-Dalio"><a href="#by-Ray-Dalio" class="headerlink" title="by Ray Dalio"></a>by Ray Dalio</h3><h3 id="雷-达里奥-著"><a href="#雷-达里奥-著" class="headerlink" title="雷.达里奥 著"></a>雷.达里奥 著</h3><h3 id="选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。"><a href="#选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。" class="headerlink" title="选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。"></a>选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。</h3><ul>
+<li>开放，创造事情合理，别人都能理解的氛围</li>
+<li>正直且要求别人正直</li>
+<li>不容忍失信，一次都不可以</li>
+<li>用行动去道歉<a id="more"></a></li>
+<li>错误归因具体到个人。写下我和别人的缺点，并且牢记这些缺点。</li>
+<li>自我反省，并确保身边的人也能自我反省</li>
+<li>认清现实是达到良好结果的根基</li>
+<li>保持在学习区</li>
+<li>跟聪明的人讲自己的观点，测试自己的观点，对我的观点进行压力测试</li>
+<li>反思</li>
+<li>做决定要基于二级效应。不要只看到眼前的痛苦或者困难，要从长远看，如果做到这件事，对自己的成长有哪些好处。</li>
+<li>对阻碍目标实现的问题零容忍。</li>
+<li>思考自己和别人的可信度</li>
+<li>考虑自己是不是能解答这个问题的人，有没有更好的人选</li>
+<li>接近思想开放的人，远离思想保守的人</li>
+<li>承受轻微痛苦是生活的常态，承受痛苦方能成长，回避痛苦会一直痛苦</li>
+</ul>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ul>
+<li>一种生活追求<br>有意义的工作， 有意义的人脉， 有趣的经历， 吃得好睡得好， 听歌， 各种新点子， 性等其他基本需求和令人愉悦之物。</li>
+<li>做决定时候，重要的事项一般不超过5件</li>
+<li>社会没进步的原因之一是社会中有很多错误的理论</li>
+<li>1） 寻求新目标； 2） 在追寻目标的过程中工作与学习； 3） 实现目标； 4） 反复这个过程。 这是个人进化过程</li>
+<li>大自然的一条根本定律是，想要进化，就要突破极限，承受痛苦，方能获得成长，回避痛苦会一直痛苦。</li>
 </ul>
 
       
@@ -335,7 +365,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/async与defer的区别/" rel="tag">#async与defer的区别</a>
+            <a href="/tags/方法论/" rel="tag">#方法论</a>
           
         </div>
       
@@ -344,16 +374,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/25/jquery中mouseover mouseout mouseenter mouseleave 差别/" rel="next" title="jQuery中mouseover mouseout mouseenter mouseleave 的差别">
-                <i class="fa fa-chevron-left"></i> jQuery中mouseover mouseout mouseenter mouseleave 的差别
+              <a href="/2016/12/11/如何学前端？/" rel="next" title="如何学前端？">
+                <i class="fa fa-chevron-left"></i> 如何学前端？
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/09/27/jQuery中 bind delegate click on都是啥？/" rel="prev" title="jQuery中 bind delegate click on都是啥？">
-                jQuery中 bind delegate click on都是啥？ <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/25/02_速读笔记_如何高效学习/" rel="prev" title="速读笔记-01-如何高效学习">
+                速读笔记-01-如何高效学习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -468,7 +498,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#书名：《原则》"><span class="nav-number">1.</span> <span class="nav-text">书名：《原则》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#by-Ray-Dalio"><span class="nav-number">2.</span> <span class="nav-text">by Ray Dalio</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#雷-达里奥-著"><span class="nav-number">3.</span> <span class="nav-text">雷.达里奥 著</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。"><span class="nav-number">4.</span> <span class="nav-text">选择的质量决定生活的质量。按照一些原则去做选择生活会更简单些，也可以避免一些错误。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#其他"><span class="nav-number">4.1.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
